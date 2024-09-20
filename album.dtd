@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT album (artist, title, year, tracks)>
+<!ELEMENT artist (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT tracks (track*)>
+<!ELEMENT track (title, length)>
+<!ELEMENT length (#PCDATA)>
