@@ -44,6 +44,7 @@
 - • 2 bytes
 - • 16 bytes
 - **Answer** 2 or 4 bytes
+  
 4.Associate the constructs for specifying a copyright sign with the corresponding language/format
 - \a9 CSS
 - \u00a9 JSON
