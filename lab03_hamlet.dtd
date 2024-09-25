@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT play (author, title, act*)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT act (title, scene)>
+<!ELEMENT scene (title, conversation)>
+<!ELEMENT conversation ((speech | sidenote)*)>
+<!ELEMENT speech (sidenote*, speaker, content)>
+<!ELEMENT sidenote (#PCDATA)>
+<!ELEMENT speaker (#PCDATA)>
+<!ELEMENT content (#PCDATA)>
