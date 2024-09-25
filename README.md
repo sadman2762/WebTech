@@ -162,6 +162,30 @@ Let `http://example/a/b/c?q` be the base URI (special mention in lecture)
 #### Name 4 URI schemes other than https or http:
 **Answer**:urn,mailto,about,geo,tel
 
+# TOPIC 5 Markdown
+
+### Format Associations
+- **Has several variants**: JSON
+- **Has two concrete syntaxes**: XML
+- **Originates from ECMAScript**: JavaScript
+- **Has a modular structure**: XML
+- **Can be used both for document-centric and data-centric applications**: JSON
+
+### Inventor Achievements
+- **John Gruber**: Markdown
+- **Ethan Marcotte**: Responsive Web Design
+- **Douglas Crockford**: JSON
+- **Tim Berners-Lee**: World Wide Web
+
+### Software Descriptions
+- **Data transfer tool**: curl
+- **Document conversion tool**: Pandoc
+- **Set of text editor plugins**: Emmet
+- **Text-based web browser**: Lynx
+
+#### Markup languages are computer languages for annotating text.(special mention in class)
+
+
 
 
 
