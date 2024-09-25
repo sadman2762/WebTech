@@ -1,0 +1,73 @@
+book, chapter, title, author{
+    display: block;
+}
+
+book {
+    counter-reset: chapter-counter footnote-counter;
+    background-color: cornsilk;
+}
+
+title + chapter {
+    border-top: solid black;
+}
+
+author, title {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+author {
+    font-variant: small-caps;
+    font-size: xx-large;
+}
+
+book > title {
+    font-size: xx-large;
+}
+
+chapter {
+    margin: 0.5em;
+}
+
+chapter > title {
+    font-size: x-large;
+    text-decoration: underline;
+    margin: 15px;
+}
+
+chapter > title::before {
+    content: "Chapter " counter(chapter-counter, upper-roman) "\2014";
+    counter-increment: chapter-counter;
+}
+
+para:hover{
+    background-color: slateblue;
+    color: white;
+}
+
+footnote {
+    display: inline;
+    font-size: 0;
+}
+
+footnote::before{
+    content: "[" counter(footnote-counter) "]";
+    counter-increment: footnote-counter;
+    font-size: small;
+}
+
+title:active{
+    transform: scale(2);
+}
+
+footnote:hover {
+    background-color: salmon;
+    font-size: large;
+    padding: 0.5rem;
+}
+
+footnote:hover::before {
+    content: "[" counter(footnote-counter) "]";
+    font-size: large;
+
+}
