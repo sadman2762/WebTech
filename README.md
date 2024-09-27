@@ -303,7 +303,11 @@ Which of the following are characteristics of HTTP/1.1?
 **Answer:** Text-based, General-purpose, Stateless
 
 
+What is a session?
+- Session is a sequence of request and response between client and servers.
 
+What is main difference between the response of HEAD and response of GET method?
+- The response of HEAD identical to GET but its without the message body or content
 
 
 
