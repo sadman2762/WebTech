@@ -273,6 +273,7 @@ Below is an HTTP request/response exchange:
 - **Unsafe**
 
 **Answer:** Conditional
+Give a Practical use case of this kind of request:
 
 ---
 
