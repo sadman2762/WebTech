@@ -186,8 +186,121 @@ Let `http://example/a/b/c?q` be the base URI (special mention in lecture)
 #### Markup languages are computer languages for annotating text.(special mention in class)
 
 
+# Topic 6 HTTP Fundamentals
+
+## Header Fields Usage
+
+| HTTP Header Field  | Usage                  |
+|--------------------|------------------------|
+| Accept             | In request only         |
+| Content-Length     | Both in requests and responses |
+| Location           | In responses only       |
+| Content-Type       | Both in requests and responses |
+| Host               | In request only         |
+| ETag               | In responses only       |
+
+---
+
+## HTTP Method for Metadata Retrieval
+
+Which HTTP method can be used to obtain metadata about a resource without transferring any representation data?
+
+- **HEAD**
+- POST
+- GET
+- OPTIONS
+
+**Answer:** HEAD
+
+---
+
+## HTTP Status Codes and Reason Phrases
+
+| HTTP Status Code   | Reason Phrase          |
+|--------------------|------------------------|
+| 200                | OK                     |
+| 403                | Forbidden              |
+| 303                | See Other              |
+| 500                | Internal Server Error  |
+| 101                | Switching Protocols    |
+| 401                | Unauthorized           |
+| 301                | Moved Permanently      |
+| 100                | Continue               |
+| 503                | Service Unavailable    |
+| 201                | Created                |
+
+**Options:**
+
+- 200: OK
+- 403: Forbidden
+- 303: See Other
+- 500: Internal Server Error
+- 101: Switching Protocols
+- 401: Unauthorized
+- 301: Moved Permanently
+- 100: Continue
+- 503: Service Unavailable
+- 201: Created
+
+---
+
+## HTTP Method(s) for Submitting Form Data
+
+Which HTTP method(s) can be used to submit form data?
+
+- **PUT**
+- **GET**
+- **POST**
+- OPTIONS
+
+**Answer:** GET, POST
+
+---
+
+## HTTP Request/Response Exchange
+
+Below is an HTTP request/response exchange:
 
 
+  < HTTP/1.1 304 Not Modified < Date: Mon, 25 May 2020 19:18:21 GMT < Server: Apache/2.4.18 (Ubuntu) < ETag: "2cSe-56b208b5d1e19;5a23b68797Fce" < Content-Location: LICENSE-2.0.txt < Expires: Mon, 25 May 2020 
+  20:18:21 GMT < Cache-Control: max-age=3600 < Vary: negotiate, accept
+
+### What type of request is the above one?
+
+- **Simple**
+- **Conditional**
+- **Idempotent**
+- **Unsafe**
+
+**Answer:** Conditional
+
+---
+
+## User-Agent Header Field
+
+Each HTTP request should include a header field that contains information about the client program (e.g., information about the operating system on which the client runs) initiating the request. What is the name of this well-known header field?
+
+- **User-Agent**
+- Accept
+- Content-Type
+- Host
+
+**Answer:** User-Agent
+
+---
+
+## Characteristics of HTTP/1.1
+
+Which of the following are characteristics of HTTP/1.1?
+
+- **Stateful**
+- **Text-based**
+- **General-purpose**
+- **Stateless**
+- **Binary**
+- **Special-purpose**
+
+**Answer:** Text-based, General-purpose, Stateless
 
 
 
