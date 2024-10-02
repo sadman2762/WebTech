@@ -1,0 +1,71 @@
+movies{
+    display: inline;
+    margin: 1em;
+    font-family: sans-serif;
+}
+
+movie {
+    display: list-item;
+    padding: 0.2em;
+    margin: 0.5em;
+    margin-left: 2em;
+    font-size: medium;
+    list-style-type: disc;
+}
+
+
+year, genre, rating, votes {
+    padding: 0.5em;
+}
+
+year::before {
+    content: "(";
+}
+
+year::after {
+    content: "): ";
+}
+
+rating::after {
+    content: "/10"
+}
+
+votes::before {
+    content: "from ";
+}
+
+votes::after {
+    content: " ratings"
+}
+
+rating, rating::after {
+    background-color: rgb(164, 164, 164);
+    color: aliceblue;
+    border-radius: 10%;
+    padding: 0.2em;
+}
+
+genre {
+    background-color: blueviolet;
+    color: white;
+    padding: 0.2em;
+    border-radius: 0.2em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+movie:hover::after { /*Key display after the hover*/
+    content: "https://www.imdb.com/title//" attr(id);
+    background-color: rgb(237, 214, 86);
+    color: whitesmoke;
+    padding: 0.2em;
+    border-radius: 0.2em;
+}
+
+title:lang(en){
+    display: inline; /*Display only the title in English language*/
+}
+
+title {
+    display: none; /*Hide the title in different languages*/
+}
