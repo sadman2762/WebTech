@@ -1,0 +1,58 @@
+directory, file {
+    display: block;
+    margin: 1em;
+    border: thin solid black;
+    box-shadow: 0.5em 0.5em 0.5em black;
+    font-family: monospace;
+}
+
+directory {
+    background-color: whitesmoke;
+}
+
+directory:root{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto; /* Make into the center*/
+}
+
+directory::before {
+    display: block;
+    content: attr(name) "/";
+    font-weight: bold;
+    background-color: cornflowerblue;
+    color: floralwhite;
+    border-bottom: thin solid black;
+}
+
+directory:empty::before {
+    border-bottom: none;
+}
+
+file {
+    background-color: white;
+}
+
+file::before, file::after {
+    display: inline-block;
+    color: gray;
+}
+
+file::before {
+    content: attr(name);
+}
+
+file::after{
+    content: attr(size) " bytes";
+    float: right;
+}
+
+file[size="1"]::after {
+    content: "1 byte";
+}
+
+directory::before, file {
+    padding: 0.5em;
+}
+
+
