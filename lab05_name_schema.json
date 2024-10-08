@@ -1,0 +1,57 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "Schema for names.json file",
+    "description": "Hello from the University of Debrecen",
+    "definitions": {
+        "response":{
+            "type": "object",
+            "properties": {
+                "count": {
+                    "type": "number",
+                    "minimum": 0
+                },
+                "name": {
+                    "type": "string"
+                },
+                "country": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "country_id": {
+                                "type": "string",
+                                "pattern": "[A-Z]{2}"
+                            },
+                            "probability": {
+                                "type": "number",
+                                "minimum": 0,
+                                "maximum": 1
+                            }
+                        },
+                        "required": ["country_id", "probability"],
+                        "additionalProperties": false
+                    }
+                }
+            },
+            "required": ["count", "name", "country"],
+            "additionalProperties": false
+        },
+
+        "arrayOfResponses": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/response"
+            }
+        }
+    },
+    "oneOf": [
+        {
+            "$ref": "#/definitions/response"
+        },
+
+        {
+            "$ref": "#/definitions/arrayOfResponses"
+        }
+    ]
+
+}
