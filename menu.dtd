@@ -1,0 +1,9 @@
+<!ELEMENT menu (menu|item|separator)*> 
+<!ATTLIST menu
+    name CDATA #REQUIRED>
+    
+<!ELEMENT item EMPTY>
+<!ATTLIST item
+    name CDATA #REQUIRED>
+    
+<!ELEMENT separator EMPTY>
