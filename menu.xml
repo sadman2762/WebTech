@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE menu SYSTEM "menu.dtd">
+<menu name="Main">
+    <menu name="File">
+        <item name="New"/>
+        <item name="Open"/>
+        <item name="Save"/>
+        <item name="Save As"/>
+        <separator/>
+        <item name="Exit"/>
+    </menu>
+    <menu name="Edit">
+        <item name="Undo"/>
+        <item name="Redo"/>
+        <separator/>
+        <item name="Cut"/>
+        <item name="Copy"/>
+        <item name="Paste"/>
+    </menu>
+    <menu name="Help">
+        <item name="About"/>
+    </menu>
+</menu>
