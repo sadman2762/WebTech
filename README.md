@@ -315,8 +315,8 @@ What is main difference between the response of HEAD and response of GET method?
 # XML 1.0
 
 ### What type of standards does XML belong to?
-- De facto standards
-- De jure standards **(Correct Answer)**
+- De facto standards **(Correct Answer)**
+- De jure standards 
 - Voluntary consensus standards
 
 ### In which order must/should elements be declared in a DTD?
@@ -338,15 +338,15 @@ What is main difference between the response of HEAD and response of GET method?
 - The XML document is well-formed, but is invalid.
 - The XML document is valid, but is not well-formed.
 - The XML document is both well-formed and valid.
-### Consider the element type declaration <!ELEMENT e ((a | b)*, c)+>. Which of the following elements are valid according to the declaration?
-- <e> <c/> <c/> <c/> </e>
-- <e> <c/> <a/> <b/> </e>
-- <e> <a/> <b/> <c/> </e> (Correct Answer)
-- <e> <c/> <a/> <b/> <c/> </e>
-- <e></e>
+### Consider the element type declaration  ```<!ELEMENT e ((a | b)*, c)+>``` . Which of the following elements are valid according to the declaration?
+-     <e> <c/> <c/> <c/> </e> (Correct Answer)
+-     <e> <c/> <a/> <b/> </e>
+-     <e> <a/> <b/> <c/> </e> (Correct Answer)
+-     <e> <c/> <a/> <b/> <c/> </e>
+-     <e></e>
 ### Which of the elements declared in a DTD can be used as the root element in XML documents?
-- Any of them.
-- Only top-level elements, i.e., elements that do not occur in the content model of any other elements declared in the DTD. (Correct Answer)
+- Any of them.(Correct Answer)
+- Only top-level elements, i.e., elements that do not occur in the content model of any other elements declared in the DTD. 
 - Only the element that is declared first in the DTD.
 - Only elements marked as potential root elements in the DTD.
 ### Which one of the following statements is true for the following document?
@@ -359,7 +359,7 @@ What is main difference between the response of HEAD and response of GET method?
 - XML document is valid, but it is not well-formed.
 - This is not a well-formed XML document. (Correct Answer)
 - XML document is well-formed, but it is invalid.
-### In XML, the elements declared as <!ELEMENT copyright (#PCDATA|holder)*> or <!ELEMENT para (#PCDATA|bold|italic)*> are said to have Mixed content.
+### In XML, the elements declared as ```<!ELEMENT copyright (#PCDATA|holder)*>```or ```<!ELEMENT para (#PCDATA|bold|italic)*>``` are said to have ```Mixed``` content.
 ### Which of the following markup constructs are allowed in the content of the element e declared as <!ELEMENT e (#PCDATA)>?
 - XML declaration
 - Comment (Correct Answer)
@@ -368,17 +368,17 @@ What is main difference between the response of HEAD and response of GET method?
 - Document type declaration
 - CDATA section (Correct Answer)
 ### How to declare the element e in a DTD as an empty element?
-- <!ELEMENT e>
-- <!ELEMENT e EMPTY> (Correct Answer)
-- <!ELEMENT e (#EMPTY)>
-- <!ELEMENT e (EMPTY)>
+-     <!ELEMENT e>
+-     <!ELEMENT e EMPTY> (Correct Answer)
+-     <!ELEMENT e (#EMPTY)>
+-     <!ELEMENT e (EMPTY)>
 ### Are the elements e and f allowed to be declared in a DTD as follows?
     xml
     Copy code
     <!ELEMENT e (f*)>
     <!ELEMENT f (e*)>
-- No, because it could result in infinite recursion. (Correct Answer)
-- Yes.
+- No, because it could result in infinite recursion. 
+- Yes.(Correct Answer)
 - No, because f is declared after e, thus, it is not available in the content model of e.
 - The answer is implementation-specific.
 ### Which one of the following is true for XML?
@@ -398,30 +398,20 @@ What is main difference between the response of HEAD and response of GET method?
 - The XML document is valid, but it is not well-formed.
 - The XML document is well-formed, but it is invalid.
 ### Which one of the following element type declarations declares an element a that must contain exactly one x element and zero or more y elements, where the x and y elements can be specified in any order?
-- <!ELEMENT a (y,x,y)*>
-- <!ELEMENT a (y*,x+,y*)> (Correct Answer)
-- <!ELEMENT a (y*,x,y*)>
-- <!ELEMENT a (y*,x,y*)*>
-### Is <!ELEMENT a (a*)> a valid XML element type declaration?
-- Yes.
-- No, because it could result in infinite recursion. (Correct Answer)
+-     <!ELEMENT a (y,x,y)*>
+-     <!ELEMENT a (y*,x+,y*)> (Correct Answer)
+-     <!ELEMENT a (y*,x,y*)>
+-     <!ELEMENT a (y*,x,y*)*>
+### Is ```<!ELEMENT a (a*)>``` a valid XML element type declaration?
+- Yes.(Correct Answer)
+- No, because it could result in infinite recursion. 
 - Yes, but if and only if the element a does not occur in the content model of other elements declared within the DTD.
 - The answer depends on the settings of the XML parser.
 ### Which one of the following element type declarations declares an element e that must contain exactly one a element and exactly one b element, where the a and b elements can be specified in any order?
-- <!ELEMENT e (a|b)?>
-- <!ELEMENT e ((a,b)|(b,a))> (Correct Answer)
-- <!ELEMENT e ((a|b),(b|a))>
-- <!ELEMENT e ((a|b),(a|b))>
+-     <!ELEMENT e (a|b)?>
+-     <!ELEMENT e ((a,b)|(b,a))> (Correct Answer)
+-     <!ELEMENT e ((a|b),(b|a))>
+-     <!ELEMENT e ((a|b),(a|b))>
 
 
-      This markdown includes both the questions and the correct answers. Let me know if you need any adjustments!
-
-
-
-
-
-
-
-
-
-
+     
