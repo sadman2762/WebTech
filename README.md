@@ -413,5 +413,42 @@ What is main difference between the response of HEAD and response of GET method?
 -     <!ELEMENT e ((a|b),(b|a))>
 -     <!ELEMENT e ((a|b),(a|b))>
 
+### Which of the following is a valid XML name?
+- AC/DC
+- 2Pac
+- Will.I.am (correct)
+- Da$h
+### Which of the following is not a valid XML name?
+- ab
+- Iamsu!(correct)
+- _ _1th_ _
+- so...
+
+### XML syntax of chracter references--
+- \u221E
+- U+221E
+- &#221E
+- &#x221E(correct)
+
+### How to specify C&A in the text of XML?
+    C@amp;A
+
+### Consider the element type declaration:
+
+xml
+Copy code
+```<!ELEMENT a ((b, c) | (d+, c)) +>```
+where the elements b, c, and d are declared to be empty. Which one of the following XML fragments is invalid?
+
+    A.  <a><b/><c/><b/></a>
+    B. <a><d/><d/><c/><b/></a>
+    C. <a><d/><c/><b/><c/></a>
+    D. <a></a> (correct)
+
+### Give an element type declaration that declares the element a with the following content model: it must contain exactly one e element and any number of (including 0) b elements, where the b and c elements can be provided in any order.
+
+    <!ELEMENT a (b*, c*, e, b*, c*)>
+
+  
 
      
