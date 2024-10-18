@@ -360,7 +360,7 @@ What is main difference between the response of HEAD and response of GET method?
 - This is not a well-formed XML document. (Correct Answer)
 - XML document is well-formed, but it is invalid.
 ### In XML, the elements declared as ```<!ELEMENT copyright (#PCDATA|holder)*>```or ```<!ELEMENT para (#PCDATA|bold|italic)*>``` are said to have ```Mixed``` content.
-### Which of the following markup constructs are allowed in the content of the element e declared as <!ELEMENT e (#PCDATA)>?
+### Which of the following markup constructs are allowed in the content of the element e declared as ```<!ELEMENT e (#PCDATA)>```?
 - XML declaration
 - Comment (Correct Answer)
 - Character reference (Correct Answer)
