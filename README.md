@@ -449,6 +449,101 @@ where the elements b, c, and d are declared to be empty. Which one of the follow
 
     <!ELEMENT a (b*, c*, e, b*, c*)>
 
+
+# Topic 8 — JSON (lecture 5)
+## The order of element inside Json doesnot matter.
+
+### 1. Which one(s) of the following is/are common characteristics of both JSON and XML?
+- [ ] Provide data types commonly used in programming languages
+- [x] Can be generated and processed easily by computer programs
+- [ ] Markup language
+- [x] Universal data exchange format
+
+### 2. Which of the following primitive datatypes are supported in JSON?
+- [ ] Date
+- [ ] Character
+- [x] Number
+- [x] Boolean
+- [x] String
+- [ ] Timestamp
+- [ ] URI
+- [x] Null
+- [ ] Base64-encoded binary
+
+### 3. Which one of the following is true for arrays in JSON?
+- [ ] To guarantee interoperability, there is a practical upper limit for the number of elements.
+- [x] None of the other statements is true.
+- [ ] All elements of an array must be of the same type.
+- [ ] An array must contain at least one element.
+
+### 4. Choose the JSON value(s) that is/are valid instance(s) of the JSON schema
+
+    {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "year": { "type": "integer" },
+        "votes": { "type": "number", "minimum": 0 }
+      },
+      "additionalProperties": true,
+      "required": ["title", "year"]
+    }
+
+- [ ] `{ "title": "The Godfather", "votes": 9.2 }`
+- [x] `{ "year": 1972, "title": "The Godfather" }`
+- [x] `{ "title": "The Godfather", "year": 1972, "genres": ["crime", "drama"] }`
+- [ ] `{ "title": "The Godfather", "year": 1972, "votes": "9.2" }`
+
+### 5. Choose the JSON value(s) that is/are valid instance(s) of the JSON schema
+
+    {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "author": { "type": "string" },
+        "published": { "type": "integer" }
+      },
+      "additionalProperties": true,
+      "required": []
+    }
+
+- [ ] `{ author: "George Orwell", "title": 1984 }`
+- [x] `{ "author": "George Orwell", "title": "1984" }`
+- [x] `{ "author": "George Orwell" }`
+- [x] `{ "published": 1949, "pages": 328 }`
+
+### 6. Which one of the following is not a JSON string?
+- [x] 'OK'
+- [ ] "\u263A"
+- [ ] "&x20;"
+- [ ] "\"Hello, World!\n\""
+
+### 7. Choose the JSON value(s) that is/are not valid instance(s) of the JSON schema
+
+    {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+- [ ] `["a", "b"]`
+- [x] `[]`
+- [x] `["x", "y", "x"]`
+- [x] `[1, 2, 3]`
+
+### 8. Which one of the following is true for JSON and JavaScript?
+- [ ] None of these statements is true.
+- [ ] JSON is an extension of EcmaScript.
+- [x] JSON is based on the syntax of ECMAScript, but is not fully compatible with it.
+- [ ] JSON is based on the syntax of ECMAScript and is fully compatible with it.
+
+### 9. What is the syntax of comments in JSON?
+- [ ] `// text`
+- [ ] `/* text */`
+- [ ] `# text`
+- [x] JSON does not have comments
+
+
   
 
      
